@@ -1,0 +1,23 @@
+This is a script to automatically generate stats dump on multiple Palo Alto Networks firewalls to be used for Security Lifecycle Report.
+There is also a BPA automation which automatically send the request to BPA API site and generate the BPA reports and download them automatically.
+This process requires NO tech support dump and speed up the process of BPA. You need to a BPA API Token to use this feature.
+
+To find more information about BPA report, please go to https://www.paloaltonetworks.com/services/bpa
+To find more information about SLR, please go to https://docs.paloaltonetworks.com/cortex/security-lifecycle-review/security-lifecycle-review-getting-started/getting-started/what-is-slr.html
+
+This script was tested and written using MACOS Mojave, Python 3.8, Panos 8.1, 9.0 and 9.1
+To run this script properly, you need to install Python 3.8 which you can download and install from here https://www.python.org/downloads/
+You also need to install PIP (Python Package Installer) which you ca download and install from here https://pip.pypa.io/en/stable/
+
+Then run
+            pip install requests
+            pip install hurry.filesize
+
+Included with this zip file, there is a plain text file to hold the IP addresses of the Palo Alto Networks firewalls that you'd like to generate the stats dump on.
+This is a newline delimiter file, follow the example and you should good to go
+
+To run the application execute the below
+
+            python3 StatsDumpGenerator.py
+
+The stats dumps, tech support file and BPA reports will be saved in the same folder as these scripts
