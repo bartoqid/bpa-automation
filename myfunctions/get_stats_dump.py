@@ -2,7 +2,6 @@ import requests
 import sys
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings()
-import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import fromstring, ElementTree
 
 def get_stats_dump(firewall_ip, api_key):
