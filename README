@@ -10,8 +10,7 @@ To run this script properly, you need to install Python 3.8 which you can downlo
 You also need to install PIP (Python Package Installer) which you ca download and install from here https://pip.pypa.io/en/stable/
 
 Then run
-            pip install requests
-            pip install hurry.filesize
+            pip3 install requests hurry.filesize elementpath
 
 Included with this zip file, there is a plain text file to hold the IP addresses of the Palo Alto Networks firewalls that you'd like to generate the stats dump on.
 This is a newline delimiter file, follow the example and you should good to go
